@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/style.min.css?v=v7.*" type="text/css">
+    <script lang="JavaScript" src="https://developer.api.autodesk.com/modelderivative/v2/viewers/viewer3D.min.js?v=v7.*"></script>
+    <script lang="JavaScript" src="js/hitpoint-extension.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/viewer.css">
+    <title>Viewer</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Autodesk Forge Viewer - jbo</h1>
+        
+        <div id="viewer"></div>
+        <button id="GetHitpoint">Hitpoint!</button>
+    </div>
+
+    <script lang="JavaScript" src="js/viewer.js"></script>
+    <script>
+        const viewer = createViewer('viewer', './svf/tunnel/0.svf')
+    </script>
+</body>
+</html>
